@@ -1,11 +1,11 @@
 
 
 
-<h1>Howarth</h1>
+<h1 class="titulos">Howarth</h1>
 
 
 <br><br>
-Total de Registros : <%= @character.count %>
+<h2 class="titulos"> Total de Registros : <%= @character.count %> </h2>
 
 <table class="table table-success table-striped">
 
@@ -18,10 +18,10 @@ Total de Registros : <%= @character.count %>
     </tr>
   </thead>
 
-  <tbody>
+  <tbody >
     <% @character.each do |r| %>
         <tr>
-            <th scope="row"><%= r.id %></th>
+            <th  scope="row"><%= r.id %></th>
             <td><%= r.name%></td>
             <td><%= r.location%></td>
             <td><%= r.house%></td>
